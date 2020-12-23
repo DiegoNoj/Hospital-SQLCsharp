@@ -43,5 +43,10 @@ namespace HopitalApp.Negocio
         {
             return ObClassFormularioClinico.CerrarCita(idCita);
         }
+
+        public bool CerrarFactura(int idFormulario)
+        {
+            return ObClassFormularioClinico.CerrarFactura(idFormulario);
+        }
     }
 }

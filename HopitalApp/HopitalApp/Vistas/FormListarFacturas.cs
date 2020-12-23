@@ -19,7 +19,7 @@ namespace HopitalApp.Vistas
         }
 
         Utilidades ObUtilidades = new Utilidades();
-
+        FormularioClinico ObFormularioClinico = new FormularioClinico();
         private void FormListarFacturas_Load(object sender, EventArgs e)
         {
             ObUtilidades.ListarFormularios(DataGridView);
@@ -39,11 +39,13 @@ namespace HopitalApp.Vistas
                     if (DataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Equals("Facturar"))
                     {
                         int id = Convert.ToInt32(DataGridView.Rows[DataGridView.CurrentRow.Index].Cells["ColumnId"].Value);
-                        //bool exito = OBFormularioClinico.CerrarCita(id);
-                        //if (exito)
-                        //{
-                        //    DataGridView.Rows.RemoveAt(e.RowIndex);
-                        //}
+                        bool exito = ObFormularioClinico.CerrarFactura(id);
+                        if (exito)
+                        {
+                            ImprimirFactura frmImprimirFactura = new ImprimirFactura(id);
+                            frmImprimirFactura.ShowDialog();
+                            DataGridView.Rows.RemoveAt(e.RowIndex);
+                        }
                     }
                 }
             }
