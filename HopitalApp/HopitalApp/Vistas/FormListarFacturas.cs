@@ -22,12 +22,17 @@ namespace HopitalApp.Vistas
         FormularioClinico ObFormularioClinico = new FormularioClinico();
         private void FormListarFacturas_Load(object sender, EventArgs e)
         {
-            ObUtilidades.ListarFormularios(DataGridView);
         }
 
         private void TxtDocumento_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (!string.IsNullOrEmpty(TxtDocumento.Text))
+                {
+                    ObUtilidades.ListarFormularios(DataGridView, TxtDocumento.Text);
+                }
+            }
         }
 
         private void DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

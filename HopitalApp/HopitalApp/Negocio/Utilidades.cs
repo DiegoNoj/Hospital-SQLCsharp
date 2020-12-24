@@ -94,12 +94,12 @@ namespace HopitalApp.Negocio
             }
         }
 
-        public void ListarFormularios(DataGridView dgv)
+        public void ListarFormularios(DataGridView dgv, string nit)
         {
             try
             {
                 dgv.Rows.Clear();
-                DataTable dt = ObClassUtilidades.ListarFormularios();
+                DataTable dt = ObClassUtilidades.ListarFormularios(nit);
                 foreach (DataRow item in dt.Rows)
                 {
                     dgv.Rows.Add(item[0].ToString(), item[1].ToString(), item[2].ToString(), item[3].ToString(),item[4].ToString(), "Facturar");

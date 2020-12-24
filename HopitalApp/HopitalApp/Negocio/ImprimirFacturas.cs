@@ -23,8 +23,8 @@ namespace HopitalApp.Negocio
                 DetalleFacturaEntity rows = new DetalleFacturaEntity()
                 {
                     Servicio = Rows[0].ToString(),
-                    Doctor = Rows[1].ToString(),
-                    Fecha = Rows[2].ToString(),
+                    Doctor = Rows[2].ToString(),
+                    Fecha = Rows[1].ToString(),
                     Costo = Rows[3].ToString(),
                 };
 

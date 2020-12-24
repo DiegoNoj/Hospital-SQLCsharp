@@ -70,6 +70,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ReportViewer);
             this.Name = "ImprimirFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ImprimirFactura";
             this.Load += new System.EventHandler(this.ImprimirFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImprimirFacturaBindingSource)).EndInit();

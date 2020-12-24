@@ -58,6 +58,7 @@
             this.TxtPassWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPassWork.Location = new System.Drawing.Point(124, 64);
             this.TxtPassWork.Name = "TxtPassWork";
+            this.TxtPassWork.PasswordChar = '*';
             this.TxtPassWork.Size = new System.Drawing.Size(193, 24);
             this.TxtPassWork.TabIndex = 3;
             // 

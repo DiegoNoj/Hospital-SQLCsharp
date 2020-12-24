@@ -79,12 +79,13 @@ namespace HopitalApp.Controlador
             return dt;
         }
 
-        public DataTable ListarFormularios()
+        public DataTable ListarFormularios(string nit)
         {
             DataTable dt = new DataTable();
             using (SqlDataAdapter adapter = new SqlDataAdapter("sp_formularioclinico", connection))
             {
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                adapter.SelectCommand.Parameters.Add("@Documento", SqlDbType.VarChar).Value = nit;
                 adapter.SelectCommand.Parameters.Add("@Modulo", SqlDbType.Char).Value = 'S';
                 adapter.Fill(dt);
             }

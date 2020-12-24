@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.TxtDocumento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,25 @@
             this.panel1.Size = new System.Drawing.Size(800, 42);
             this.panel1.TabIndex = 0;
             // 
+            // TxtDocumento
+            // 
+            this.TxtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDocumento.Location = new System.Drawing.Point(134, 6);
+            this.TxtDocumento.Name = "TxtDocumento";
+            this.TxtDocumento.Size = new System.Drawing.Size(336, 26);
+            this.TxtDocumento.TabIndex = 1;
+            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Documento:";
+            // 
             // DataGridView
             // 
             this.DataGridView.AllowUserToAddRows = false;
@@ -58,25 +77,6 @@
             this.DataGridView.Size = new System.Drawing.Size(800, 408);
             this.DataGridView.TabIndex = 1;
             this.DataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView_KeyDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Docuemento:";
-            // 
-            // TxtDocumento
-            // 
-            this.TxtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDocumento.Location = new System.Drawing.Point(134, 6);
-            this.TxtDocumento.Name = "TxtDocumento";
-            this.TxtDocumento.Size = new System.Drawing.Size(336, 26);
-            this.TxtDocumento.TabIndex = 1;
-            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // FrmBuscarPaciente
             // 

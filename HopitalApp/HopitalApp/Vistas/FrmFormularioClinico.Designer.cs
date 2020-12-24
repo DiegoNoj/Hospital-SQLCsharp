@@ -247,6 +247,7 @@
             this.ColumnDdvIdDetalle.HeaderText = "IdDetalle";
             this.ColumnDdvIdDetalle.Name = "ColumnDdvIdDetalle";
             this.ColumnDdvIdDetalle.ReadOnly = true;
+            this.ColumnDdvIdDetalle.Visible = false;
             // 
             // ColumnDgvServicio
             // 
@@ -311,11 +312,11 @@
         private System.Windows.Forms.ComboBox CboServicio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDdvIdDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDgvServicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDgvDoctor;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDgvFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDgvCosto;
-        private System.Windows.Forms.Button BtnAgregar;
     }
 }

@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtDocumento = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPaciente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDgvCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFacturar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtDocumento = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,36 +60,6 @@
             this.DataGridView.Size = new System.Drawing.Size(800, 408);
             this.DataGridView.TabIndex = 3;
             this.DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellContentClick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
-            this.panel1.Controls.Add(this.TxtDocumento);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 42);
-            this.panel1.TabIndex = 2;
-            // 
-            // TxtDocumento
-            // 
-            this.TxtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDocumento.Location = new System.Drawing.Point(134, 6);
-            this.TxtDocumento.Name = "TxtDocumento";
-            this.TxtDocumento.Size = new System.Drawing.Size(336, 26);
-            this.TxtDocumento.TabIndex = 1;
-            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumento_KeyPress);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Docuemento:";
             // 
             // ColumnId
             // 
@@ -129,6 +99,36 @@
             this.ColumnFacturar.ReadOnly = true;
             this.ColumnFacturar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ColumnFacturar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.panel1.Controls.Add(this.TxtDocumento);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 42);
+            this.panel1.TabIndex = 2;
+            // 
+            // TxtDocumento
+            // 
+            this.TxtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDocumento.Location = new System.Drawing.Point(134, 6);
+            this.TxtDocumento.Name = "TxtDocumento";
+            this.TxtDocumento.Size = new System.Drawing.Size(336, 26);
+            this.TxtDocumento.TabIndex = 1;
+            this.TxtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDocumento_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Documento:";
             // 
             // FormListarFacturas
             // 
